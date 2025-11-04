@@ -128,11 +128,6 @@
         background-color: rgb(95, 95, 95);
 }
 
-    @media (min-width: 320px) and (max-width: 430px) {
-        body{
-            background-color: black;
-        }
-
         nav ul {
             flex-direction: column;
             text-align: center;
@@ -145,5 +140,11 @@
 
         h1{
             font-size: 1.5rem;
+        }
+    
+
+    @media (min-width: 320px) and (max-width: 430px) {
+        body{
+            background-color: black;
         }
     }
