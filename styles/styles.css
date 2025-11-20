@@ -1,150 +1,204 @@
-    h1{
-        color: rgb(0, 0, 0);
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 35px;
-        text-align: center;
-} /*color, margen, estilo y alineación del h1*/
-
-    header{
-        text-align: center;
+body{
+    margin: 0;
+    background-color: rgb(95, 95, 95);
 }
 
-    #oasis-logo{
-        width: 800px;
-        justify-content: center;
+h1{
+    color: rgb(0, 0, 0);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
 }
+
+h2{
+    color: rgb(0, 0, 0);
+    margin: 25px;
+    font-family: "Rock Salt", cursive;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    text-align: center;
+}
+
+nav{
+    background-color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 240px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#oasis-logo{
+    width: 800px;
+    max-width: 90%;
+}
+
+#el-diego{
+    border: 8px double #ffffff; 
+    width: 500px;
+    max-width: 90%;
+    height: auto;
+    margin-top: 90px;
+}
+
+#D10S{
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.texto{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 25px;
+}
+
+
+#main-shows{
+    text-align: center;
+    list-style-position: inside;
+}
+
+#galeriamain{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.imgs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    width: 80%;
+}
+
+.foto{
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.foto:hover{
+    transform: scale(1.05);
+}
+
+#sectionV {
+    margin-top: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; 
+    max-width: 900px;
+}
+
+#mapa{
+    margin-top: 90px;
+    max-width: 90%;
+}
+
+footer{
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    margin-top: 65px;
+    font-size: 18px;
+}
+
+footer h3{
+    font-size: 20px;    
+    margin: 4px 0;        
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+footer img{
+    width: 40px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 430px) {
 
     nav{
-        background-color: black;
-        height: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0px;
-}
-
+        height: auto;
+        padding: 10px 0;
+    }
 
     nav ul{
-        display: flex;
-        list-style: none;
-        gap: 240px;
-        justify-content: center;
-}
+        flex-direction: column;
+        gap: 10px;
+    }
 
-    nav a{
-        color: white;
-        text-decoration: none;
-}
-
-    h2{
-        color: rgb(0, 0, 0);
-        margin: 25px;
-        font-family: "Rock Salt", cursive;
-}/*color, margen, estilo y alineación de h2*/
-
-    main{
-        text-align: center;
+    #oasis-logo{
+        width: 90%;
     }
 
     #el-diego{
-        border: 3px dashed rgb(0, 0, 0);
-        border: 8px double #ffffff; 
-        width: 500px;
-        height: auto;
-        margin-top: 90px;
-}
-
-    #D10S{
-        font-family: "Bebas Neue", sans-serif;
-        margin-top: 0px;
-        text-align: center;
-        margin-left: 330px;
-}
+        margin-top: 40px;
+    }
 
     .texto{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin-left: 0px;
-        margin-top: 25px;
-        text-size-adjust: 80px;
-}
+        margin: 15px;
+    }
 
-    #main-shows{
-        text-align: center;
-        list-style-position: inside;
-}
+    #sectionV{
+        width: 100%;
+        margin-top: 40px;
+    }
 
     #galeriamain{
-        display: flex;
-        justify-content: center;
-        padding: 20px;
+        padding: 10px;
     }
 
     .imgs{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-        gap: 20px;
-        width: 110%;
-}
-
-    .foto{
-        width: 95%;
-        margin: 15px;
-        border: 2px solid rgb(0, 0, 0);
-}
-
-    .foto:hover{
-        transform: scale(1.1);
-}
-
-    #mapa{
-        margin-top: 90px;
-}
-
-    #sectionV {
-        margin-top: 90px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%; 
-        max-width: 900px;
-}
-
-    footer{
-        font-family: "Bebas Neue", sans-serif;
-        text-align: center;
-        margin-top: 65px;
-}
-
-    footer ul{
-        list-style: none;
-        display: flex;
-        gap: 50px;
-        justify-content: center;
-        margin-right: 36px;
-}
-
-    body{
-        background-color: rgb(95, 95, 95);
-}
-
-        nav ul {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-
-        h1{
-            font-size: 1.5rem;
-        }
-    
-
-    @media (min-width: 320px) and (max-width: 430px) {
-        body{
-            background-color: black;
-        }
+        grid-template-columns: 1fr;
+        width: 100%;
     }
+
+    h1{
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 768px){
+
+    nav ul{
+        gap: 40px;
+    }
+
+    #oasis-logo{
+        width: 70%;
+    }
+
+    .imgs{
+        width: 90%;
+    }
+}
