@@ -1,0 +1,22 @@
+// abstracts/_mixins.scss
+@use "variables" as *;
+
+@mixin flex-center($direction: row, $gap: 0) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+    gap: $gap;
+}
+
+@mixin respond-to($device) {
+    @if $device == mobile {
+    @media (max-width: $bp-mobile) {
+        @content;
+    }
+    } @else if ($device == tablet) {
+    @media (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+        @content;
+    }
+    }
+}

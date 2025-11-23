@@ -1,0 +1,17 @@
+// estilos.scss (archivo principal)
+
+// 1. Abstracts
+@use "abstracts/variables";
+@use "abstracts/mixins";
+
+// 2. Base
+@use "base/global";
+
+// 3. Layout
+@use "layout/layout";
+
+// 4. Components
+@use "components/components";
+
+// 5. Pages
+@use "pages/pages";

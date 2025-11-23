@@ -1,0 +1,60 @@
+// layout/_layout.scss
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+header {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+nav {
+    background-color: $color-nav-bg;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 240px;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+    li a {
+        color: $color-nav-text;
+        text-decoration: none;
+        font-family: $font-title;
+        transition: color 0.2s ease;
+
+        &:hover {
+                color: lighten($color-nav-text, 20%);
+            }
+        }
+    }
+}
+
+@include respond-to(mobile) {
+    nav {
+        height: auto;
+        padding: 10px 0;
+
+    ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
+@include respond-to(tablet) {
+    nav {
+        ul {
+            gap: 40px;
+        }
+    }
+}

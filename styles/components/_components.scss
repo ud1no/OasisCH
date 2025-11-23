@@ -1,0 +1,120 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+#oasis-logo {
+    width: 800px;
+    max-width: 90%;
+}
+
+#el-diego {
+    border: 8px double #ffffff;
+    width: 500px;
+    max-width: 90%;
+    height: auto;
+    margin-top: 90px;
+}
+
+#D10S {
+    font-family: $font-title;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.texto {
+    font-family: $font-body;
+    margin-top: 25px;
+}
+
+#sectionV {
+    margin-top: 150px;
+    margin-bottom: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 900px;
+}
+
+#galeriamain {
+    @include flex-center(row, 0);
+        padding: 20px;
+
+    .imgs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+        width: 80%;
+
+        .foto {
+            width: 100%;
+            border: 2px solid $color-card-border;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+
+        &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+#main-shows {
+    text-align: center;
+    list-style-position: inside;
+}
+
+#mapa {
+    margin-top: 90px;
+    max-width: 90%;
+}
+
+/*  MOBILE  */
+@include respond-to(mobile) {
+    #oasis-logo {
+        width: 90%;
+    }
+
+    #el-diego {
+        margin-top: 40px;
+    }
+
+    .texto {
+        margin: 15px;
+    }
+
+    #sectionV {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    #galeriamain {
+        padding: 10px;
+    }
+
+    #galeriamain .imgs {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    #mapa {
+        margin-top: 40px;
+        max-width: 100%;
+    }
+
+    footer {
+        margin-top: 40px;
+        padding: 20px 0;
+    }
+}
+
+/*  TABLET  */
+@include respond-to(tablet) {
+    #oasis-logo {
+        width: 70%;
+    }
+
+    #galeriamain .imgs {
+        width: 90%;
+    }
+}

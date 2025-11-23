@@ -1,204 +1,194 @@
-body{
-    margin: 0;
-    background-color: rgb(95, 95, 95);
+body {
+  margin: 0;
+  background-color: rgb(95, 95, 95);
 }
 
-h1{
-    color: rgb(0, 0, 0);
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 35px;
-    text-align: center;
-    margin-top: 20px;
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 20px;
 }
 
-h2{
-    color: rgb(0, 0, 0);
-    margin: 25px;
-    font-family: "Rock Salt", cursive;
+h2 {
+  color: rgb(0, 0, 0);
+  margin: 25px;
+  font-family: "Rock Salt", cursive;
 }
 
-header{
-    text-align: center;
+.texto {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 25px;
 }
 
-main{
-    text-align: center;
+header {
+  text-align: center;
 }
 
-nav{
-    background-color: black;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
+main {
+  text-align: center;
 }
 
-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 240px;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+nav {
+  background-color: #000;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
-
-nav a{
-    color: white;
-    text-decoration: none;
-    font-family: "Bebas Neue", sans-serif;
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 240px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
-
-#oasis-logo{
-    width: 800px;
-    max-width: 90%;
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  transition: color 0.2s ease;
 }
-
-#el-diego{
-    border: 8px double #ffffff; 
-    width: 500px;
-    max-width: 90%;
-    height: auto;
-    margin-top: 90px;
-}
-
-#D10S{
-    font-family: "Bebas Neue", sans-serif;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.texto{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 25px;
-}
-
-
-#main-shows{
-    text-align: center;
-    list-style-position: inside;
-}
-
-#galeriamain{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.imgs{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 20px;
-    width: 80%;
-}
-
-.foto{
-    width: 100%;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.foto:hover{
-    transform: scale(1.05);
-}
-
-#sectionV {
-    margin-top: 90px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%; 
-    max-width: 900px;
-}
-
-#mapa{
-    margin-top: 90px;
-    max-width: 90%;
-}
-
-footer{
-    font-family: "Bebas Neue", sans-serif;
-    text-align: center;
-    margin-top: 65px;
-    font-size: 18px;
-}
-
-footer h3{
-    font-size: 20px;    
-    margin: 4px 0;        
-}
-
-footer ul{
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    margin: 10px 0 0 0;
-    padding: 0;
-}
-
-footer img{
-    width: 40px;
-    height: 35px;
-    margin-bottom: 15px;
+nav ul li a:hover {
+  color: white;
 }
 
 @media (max-width: 430px) {
-
-    nav{
-        height: auto;
-        padding: 10px 0;
-    }
-
-    nav ul{
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    #oasis-logo{
-        width: 90%;
-    }
-
-    #el-diego{
-        margin-top: 40px;
-    }
-
-    .texto{
-        margin: 15px;
-    }
-
-    #sectionV{
-        width: 100%;
-        margin-top: 40px;
-    }
-
-    #galeriamain{
-        padding: 10px;
-    }
-
-    .imgs{
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-
-    h1{
-        font-size: 28px;
-    }
+  nav {
+    height: auto;
+    padding: 10px 0;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (min-width: 431px) and (max-width: 768px) {
+  nav ul {
+    gap: 40px;
+  }
+}
+#oasis-logo {
+  width: 800px;
+  max-width: 90%;
 }
 
-@media (min-width: 431px) and (max-width: 768px){
-
-    nav ul{
-        gap: 40px;
-    }
-
-    #oasis-logo{
-        width: 70%;
-    }
-
-    .imgs{
-        width: 90%;
-    }
+#el-diego {
+  border: 8px double #ffffff;
+  width: 500px;
+  max-width: 90%;
+  height: auto;
+  margin-top: 90px;
 }
+
+#D10S {
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.texto {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 25px;
+}
+
+#sectionV {
+  margin-top: 150px;
+  margin-bottom: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  max-width: 900px;
+}
+
+#galeriamain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: 20px;
+}
+#galeriamain .imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  width: 80%;
+}
+#galeriamain .imgs .foto {
+  width: 100%;
+  border: 2px solid #000;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+#galeriamain .imgs .foto:hover {
+  transform: scale(1.05);
+}
+
+#main-shows {
+  text-align: center;
+  list-style-position: inside;
+}
+
+#mapa {
+  margin-top: 90px;
+  max-width: 90%;
+}
+
+/*  MOBILE  */
+@media (max-width: 430px) {
+  #oasis-logo {
+    width: 90%;
+  }
+  #el-diego {
+    margin-top: 40px;
+  }
+  .texto {
+    margin: 15px;
+  }
+  #sectionV {
+    width: 100%;
+    margin-top: 40px;
+  }
+  #galeriamain {
+    padding: 10px;
+  }
+  #galeriamain .imgs {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  #mapa {
+    margin-top: 40px;
+    max-width: 100%;
+  }
+  footer {
+    margin-top: 40px;
+    padding: 20px 0;
+  }
+}
+/*  TABLET  */
+@media (min-width: 431px) and (max-width: 768px) {
+  #oasis-logo {
+    width: 70%;
+  }
+  #galeriamain .imgs {
+    width: 90%;
+  }
+}
+#D10S {
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#main-shows {
+  text-align: center;
+  list-style-position: inside;
+}
+
+/*# sourceMappingURL=styles.css.map */
