@@ -1,10 +1,34 @@
 @use "../abstracts/mixins" as *;
 @use "../abstracts/variables" as *;
 
+@keyframes logo-fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes title-slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #oasis-logo {
     width: 800px;
     max-width: 90%;
+    animation: logo-fade-in 0.9s ease-out;
 }
+
 
 #el-diego {
     border: 8px double #ffffff;
@@ -69,24 +93,18 @@
     max-width: 90%;
 }
 
-/*  MOBILE  */
+
 @include respond-to(mobile) {
     #oasis-logo {
         width: 90%;
-    }
-
-    #el-diego {
-        margin-top: 40px;
-    }
-
-    .texto {
-        margin: 15px;
+        margin-top: 20px;
     }
 
     #sectionV {
         width: 100%;
         margin-top: 40px;
-    }
+        margin-bottom: 60px;
+    } 
 
     #galeriamain {
         padding: 10px;
@@ -97,18 +115,14 @@
         width: 100%;
     }
 
-    #mapa {
-        margin-top: 40px;
-        max-width: 100%;
-    }
-
     footer {
         margin-top: 40px;
         padding: 20px 0;
     }
 }
 
-/*  TABLET  */
+
+
 @include respond-to(tablet) {
     #oasis-logo {
         width: 70%;

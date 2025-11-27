@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  color: rgb(0, 0, 0);
+  color: #000;
   font-family: "Bebas Neue", sans-serif;
   font-size: 35px;
   text-align: center;
@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-  color: rgb(0, 0, 0);
+  color: #000;
   margin: 25px;
   font-family: "Rock Salt", cursive;
 }
@@ -20,6 +20,10 @@ h2 {
 .texto {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-top: 25px;
+}
+
+iframe {
+  max-width: 100%;
 }
 
 header {
@@ -50,10 +54,11 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-family: "Bebas Neue", sans-serif;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 nav ul li a:hover {
   color: white;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 430px) {
@@ -71,9 +76,30 @@ nav ul li a:hover {
     gap: 40px;
   }
 }
+@keyframes logo-fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes title-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 #oasis-logo {
   width: 800px;
   max-width: 90%;
+  animation: logo-fade-in 0.9s ease-out;
 }
 
 #el-diego {
@@ -140,20 +166,15 @@ nav ul li a:hover {
   max-width: 90%;
 }
 
-/*  MOBILE  */
 @media (max-width: 430px) {
   #oasis-logo {
     width: 90%;
-  }
-  #el-diego {
-    margin-top: 40px;
-  }
-  .texto {
-    margin: 15px;
+    margin-top: 20px;
   }
   #sectionV {
     width: 100%;
     margin-top: 40px;
+    margin-bottom: 60px;
   }
   #galeriamain {
     padding: 10px;
@@ -162,16 +183,11 @@ nav ul li a:hover {
     grid-template-columns: 1fr;
     width: 100%;
   }
-  #mapa {
-    margin-top: 40px;
-    max-width: 100%;
-  }
   footer {
     margin-top: 40px;
     padding: 20px 0;
   }
 }
-/*  TABLET  */
 @media (min-width: 431px) and (max-width: 768px) {
   #oasis-logo {
     width: 70%;

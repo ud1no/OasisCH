@@ -30,12 +30,13 @@ nav {
         color: $color-nav-text;
         text-decoration: none;
         font-family: $font-title;
-        transition: color 0.2s ease;
+        transition: color 0.2s ease, transform 0.2s ease;
 
         &:hover {
                 color: lighten($color-nav-text, 20%);
+                transform: translateY(-2px);
             }
-        }
+        }      
     }
 }
 

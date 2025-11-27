@@ -1,23 +1,30 @@
-body{
+// base/_global.scss
+@use "../abstracts/variables" as *;
+
+body {
     margin: 0;
-    background-color: rgb(95, 95, 95);
+    background-color: $color-body-bg;
 }
 
-h1{
-    color: rgb(0, 0, 0);
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 35px;
+h1 {
+    color: $color-text-main;
+    font-family: $font-title;
+    font-size: $h1-size-desktop;
     text-align: center;
     margin-top: 20px;
 }
 
-h2{
-    color: rgb(0, 0, 0);
+h2 {
+    color: $color-text-main;
     margin: 25px;
-    font-family: "Rock Salt", cursive;
+    font-family: $font-subtitle;
 }
 
-.texto{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.texto {
+    font-family: $font-body;
     margin-top: 25px;
+}
+
+iframe {
+    max-width: 100%;
 }
