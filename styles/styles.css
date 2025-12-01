@@ -207,4 +207,97 @@ nav ul li a:hover {
   list-style-position: inside;
 }
 
+#main-shows {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.shows-grid {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+
+.show-card {
+  background-color: #574040;
+  color: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.show-card h3 {
+  margin-bottom: 10px;
+}
+
+.show-card .show-status {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.show-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(158, 144, 144, 0.7);
+}
+
+.video-show {
+  max-width: 900px;
+  margin: 60px auto 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.video-show p {
+  margin-bottom: 15px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.setlist {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  margin-bottom: 60px;
+}
+
+.setlist ol {
+  padding-left: 20px;
+}
+
+.setlist li {
+  margin-bottom: 6px;
+}
+
+.curiosidades {
+  max-width: 800px;
+  margin: 40px auto 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+}
+
+.curiosidades ul {
+  list-style: circle;
+  padding: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
