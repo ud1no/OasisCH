@@ -2,35 +2,35 @@
 @use "../abstracts/variables" as *;
 
 @keyframes logo-fade-in {
-    from {
+    from{
         opacity: 0;
         transform: scale(0.9);
     }
-    to {
+    to{
         opacity: 1;
         transform: scale(1);
     }
 }
 
 @keyframes title-slide-down {
-    from {
+    from{
         opacity: 0;
         transform: translateY(-10px);
     }
-    to {
+    to{
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-#oasis-logo {
+#oasis-logo{
     width: 800px;
     max-width: 90%;
     animation: logo-fade-in 0.9s ease-out;
 }
 
 
-#el-diego {
+#el-diego{
     border: 8px double #ffffff;
     width: 500px;
     max-width: 90%;
@@ -38,18 +38,18 @@
     margin-top: 90px;
 }
 
-#D10S {
+#D10S{
     font-family: $font-title;
     margin-top: 10px;
     text-align: center;
 }
 
-.texto {
+.texto{
     font-family: $font-body;
     margin-top: 25px;
 }
 
-#sectionV {
+#sectionV{
     margin-top: 150px;
     margin-bottom: 80px;
     display: block;
@@ -59,63 +59,89 @@
     max-width: 900px;
 }
 
-#galeriamain {
+#galeriamain{
     @include flex-center(row, 0);
         padding: 20px;
 
-    .imgs {
+    .imgs{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
         gap: 20px;
         width: 80%;
 
-        .foto {
+        .foto{
             width: 100%;
             border: 2px solid $color-card-border;
             border-radius: 10px;
             transition: transform 0.3s ease;
 
-        &:hover {
+        &:hover{
                 transform: scale(1.05);
             }
         }
     }
 }
 
-#main-shows {
+#main-shows{
     text-align: center;
     list-style-position: inside;
 }
 
-#mapa {
+#mapa{
     margin-top: 90px;
     max-width: 90%;
 }
 
+main{
+    padding-bottom: 40px;
+}
 
-@include respond-to(mobile) {
-    #oasis-logo {
+footer{
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+footer h3{
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@include respond-to(mobile){
+    #oasis-logo{
         width: 90%;
         margin-top: 20px;
     }
 
-    #sectionV {
+    #sectionV{
         width: 100%;
         margin-top: 40px;
         margin-bottom: 60px;
     } 
 
-    #galeriamain {
+    #galeriamain{
         padding: 10px;
     }
 
-    #galeriamain .imgs {
+    #galeriamain .imgs{
         grid-template-columns: 1fr;
         width: 100%;
     }
 
-    footer {
+    footer{
         margin-top: 40px;
         padding: 20px 0;
     }
@@ -124,11 +150,11 @@
 
 
 @include respond-to(tablet) {
-    #oasis-logo {
+    #oasis-logo{
         width: 70%;
     }
 
-    #galeriamain .imgs {
+    #galeriamain .imgs{
         width: 90%;
     }
 }

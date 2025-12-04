@@ -1,9 +1,9 @@
-body {
+body{
   margin: 0;
   background-color: rgb(95, 95, 95);
 }
 
-h1 {
+h1{
   color: #000;
   font-family: "Bebas Neue", sans-serif;
   font-size: 35px;
@@ -11,30 +11,30 @@ h1 {
   margin-top: 20px;
 }
 
-h2 {
+h2{
   color: #000;
   margin: 25px;
   font-family: "Rock Salt", cursive;
 }
 
-.texto {
+.texto{
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-top: 25px;
 }
 
-iframe {
+iframe{
   max-width: 100%;
 }
 
-header {
+header{
   text-align: center;
 }
 
-main {
+main{
   text-align: center;
 }
 
-nav {
+nav{
   background-color: #000;
   height: 80px;
   display: flex;
@@ -42,7 +42,8 @@ nav {
   justify-content: center;
   padding: 0;
 }
-nav ul {
+
+nav ul{
   display: flex;
   list-style: none;
   gap: 240px;
@@ -50,12 +51,14 @@ nav ul {
   margin: 0;
   padding: 0;
 }
+
 nav ul li a {
   color: #fff;
   text-decoration: none;
   font-family: "Bebas Neue", sans-serif;
   transition: color 0.2s ease, transform 0.2s ease;
 }
+
 nav ul li a:hover {
   color: white;
   transform: translateY(-2px);
@@ -166,6 +169,33 @@ nav ul li a:hover {
   max-width: 90%;
 }
 
+main {
+  padding-bottom: 40px;
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+footer h3 {
+  margin: 5px 0;
+  font-weight: 400;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 @media (max-width: 430px) {
   #oasis-logo {
     width: 90%;
@@ -202,16 +232,6 @@ nav ul li a:hover {
   text-align: center;
 }
 
-#main-shows {
-  text-align: center;
-  list-style-position: inside;
-}
-
-#main-shows {
-  text-align: center;
-  padding: 40px 20px;
-}
-
 .shows-grid {
   max-width: 1000px;
   margin: 40px auto;
@@ -221,11 +241,11 @@ nav ul li a:hover {
 }
 
 .show-card {
-  background-color: #574040;
-  color: #f5f5f5;
+  background-color: #252f31;
+  color: #ffffff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 10px rgba(52, 73, 122, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -240,7 +260,7 @@ nav ul li a:hover {
 
 .show-card:hover {
   transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 8px 20px rgba(158, 144, 144, 0.7);
+  box-shadow: 0 8px 20px rgba(154, 144, 144, 0.7);
 }
 
 .video-show {

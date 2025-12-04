@@ -4,20 +4,7 @@
     text-align: center;
 }
 
-#main-shows{
-    text-align: center;
-    list-style-position: inside;
-}
-
-
-
-#main-shows {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-
-.shows-grid {
+.shows-grid{
     max-width: 1000px;
     margin: 40px auto;
     display: grid;
@@ -25,42 +12,42 @@
     gap: 20px;
 }
 
-.show-card {
-    background-color: #574040;
-    color: #f5f5f5;
+.show-card{
+    background-color: #252f31;
+    color: #ffffff;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 10px rgba(52, 73, 122, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.show-card h3 {
+.show-card h3{
     margin-bottom: 10px;
 }
 
-.show-card .show-status {
+.show-card .show-status{
     font-size: 0.9rem;
     opacity: 0.9;
 }
 
-.show-card:hover {
+.show-card:hover{
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 8px 20px rgba(158, 144, 144, 0.7);
+    box-shadow: 0 8px 20px rgba(154, 144, 144, 0.7);
 }
 
 
-.video-show {
+.video-show{
     max-width: 900px;
     margin: 60px auto 40px;
     margin-top: 80px;
     margin-bottom: 80px;
 }
 
-.video-show p {
+.video-show p{
     margin-bottom: 15px;
 }
 
-.video-wrapper {
+.video-wrapper{
     position: relative;
     padding-bottom: 56.25%; 
     height: 0;
@@ -69,7 +56,7 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
-.video-wrapper iframe {
+.video-wrapper iframe{
     position: absolute;
     top: 0;
     left: 0;
@@ -78,7 +65,7 @@
 }
 
 
-.setlist {
+.setlist{
     max-width: 600px;
     margin: 40px auto;
     text-align: center;
@@ -87,23 +74,22 @@
     margin-bottom: 60px;
 }
 
-.setlist ol {
+.setlist ol{
     padding-left: 20px;
 }
 
-.setlist li {
+.setlist li{
     margin-bottom: 6px;
 }
 
-
-.curiosidades {
+.curiosidades{
     max-width: 800px;
     margin: 40px auto 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
 }
 
-.curiosidades ul {
+.curiosidades ul{
     list-style: circle;
     padding: 0;
 }
